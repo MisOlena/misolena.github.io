@@ -1,0 +1,182 @@
+
+/*1*/
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;  /*ширина задається контенту, тому коли ми вказуємо обнелення, це означає, що в них буде враховуватися все крім маржіна*/
+
+}
+
+img{  /*всі крартинки адаптивні, доступний простір блоку в якому знаходятьяс
+	*/
+	display: block;
+	max-width: 100%;
+	height: auto;	
+	/*border: 10px outset #d1d7b1;*/
+	border-radius: 80px 0px 80px 0px; 
+}
+
+body{
+	font-size: 12px;  /*основний шрифт, якщо не буде, що буде, якщо не буде - сімейство шрифтів*/
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-wrapper{
+	background-color: #6a7436;
+	padding: 20px 40px 20px 40px;
+}
+
+.header{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: #a0aa6d;
+}
+.foto{
+	height: 40%;
+	padding: 10px;
+}
+.zagolovok{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+.zagolovok div:first-child{
+	font-family:Brush Script MT, Brush Script Std, cursive;
+	font-size: 38px;
+	color: #6a7436;
+	text-shadow: 3px -3px 5px white;
+
+}
+.zagolovok div:last-child{
+	font-family: Bradley Hand, cursive;
+	font-size: 20px;
+	text-align: center;
+	text-shadow: 3px -3px 5px white;
+}
+.mal{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.square{
+	width: 10px;
+	height: 10px;
+	background-color: white;
+	margin: 30px;
+	box-shadow: 0 0 10px #6a7436;
+	animation-name: spin;  /*задає імя анімації*/
+	animation-duration: 2s;  /*задає час протягом якого буде виконуватися один цикл анімації*/
+	animation-iteration-count: infinite;  /*кількість анімацій*/
+}
+@keyframes spin{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+.kontaktu{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 10px;
+	font-size: 15px;
+}
+.kontaktu img{
+	height: 190px;
+	width: 190px;
+	padding: 10px;
+}
+.wrapper{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: #d1d7b1;
+	font-family: Brush Script MT, Brush Script Std, cursive;
+	padding: 10px;
+	text-align: center;
+}
+
+.menu{
+	/*display: none;*/
+	background-color: #a0aa6d;
+	width: 200px;
+}
+.menu li{
+	border: 10px outset #d1d7b1;
+	text-decoration: none;
+	list-style: none;
+}
+.menu li a{
+	text-decoration: none;
+}
+
+.my-flex-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-content: space-around;
+}
+.letter { 
+     color: red;  
+     font-size: 200%; 
+     font-family: serif; /* Шрифт з засічками */ 
+     position: relative;  
+     top: 5px; 
+}
+.my-flex-block{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	border: 10px solid #a0aa6d;
+	padding: 5px;
+}
+.text{
+	display: none;
+	padding-left: 20px;
+	width: 320px;
+}
+.my-flex-block div:first-child{
+	min-width: 50px;
+	width: 180px;
+	border: 10px outset #d1d7b1;
+	text-align: left;
+}
+.my-flex-block a{
+	text-decoration: none;
+	/*padding-left: -10px;*/
+}
+
+.wrapper img{
+	min-height: 30px;
+	max-height: 80px;
+}
+ol{
+	/*display: none;*/
+	text-align: left;
+	padding-left: 30px;
+}
+
+/*для компа*/
+@media (min-width: 1224px) { 
+.wrapper{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.header{
+	display: flex;
+	flex-direction: row;
+}
+.text{
+	display: inline-block;
+}
+.my-flex-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}

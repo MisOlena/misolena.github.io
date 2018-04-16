@@ -130,6 +130,9 @@ body{
 	/*padding-left: 20px;*/
 	width: 240px;
 }
+.text div {
+	padding: 5px;
+}
 
 ol li:nth-child(odd){
 	background-color: #acc181;

@@ -123,6 +123,7 @@ body{
 	justify-content: flex-start;
 	border: 10px solid #a0aa6d;
 	padding: 5px;
+	font-family: Arial;
 }
 .text{
 	/*display: none;*/

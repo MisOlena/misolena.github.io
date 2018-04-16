@@ -93,13 +93,13 @@ body{
 	flex-direction: row;
 	justify-content: space-around;
 	background-color: #d1d7b1;
-	font-family: Brush Script MT, Brush Script Std, cursive;
+	font-family: Brush Script MT, Brush Script Std, cursive, Arial;
 	padding: 10px;
 	text-align: center;
 }
 
 /*меню гамбургер*/
-
+/*
  .menu_male {
     text-align: right;
 }
@@ -200,7 +200,7 @@ body{
     color: #ffffff;
   }
 }
-
+*/
 /*кінець гамбургера*/
 
 
@@ -219,7 +219,7 @@ body{
 .letter { 
      color: red;  
      font-size: 200%; 
-     font-family: serif; /* Шрифт з засічками */ 
+     font-family: serif, Arial;; /* Шрифт з засічками */ 
      position: relative;  
      top: 5px; 
 }

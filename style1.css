@@ -93,7 +93,7 @@ body{
 	flex-direction: column;
 	justify-content: space-around;
 	background-color: #d1d7b1;
-	font-family: Brush Script MT, Brush Script Std, cursive;
+	font-family: Brush Script MT, Brush Script Std, cursive, Arial;
 	padding: 10px;
 	text-align: center;
 }
@@ -112,7 +112,7 @@ body{
 .letter { 
      color: red;  
      font-size: 200%; 
-     font-family: serif; /* Шрифт з засічками */ 
+     font-family: serif, Arial; /* Шрифт з засічками */ 
      position: relative;  
      top: 5px; 
 }
@@ -127,7 +127,7 @@ body{
 .text{
 	/*display: none;*/
 	/*padding-left: 20px;*/
-	width: 200px;
+	width: 240px;
 }
 
 ol li:nth-child(odd){
@@ -136,7 +136,7 @@ ol li:nth-child(odd){
 ol li:nth-child(even){
 	background-color: #d7edaa;
 }
-d7edaa
+
 .my-flex-block div:first-child{
 	min-width: 50px;
 	width: 180px;

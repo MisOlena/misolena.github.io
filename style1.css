@@ -17,13 +17,13 @@ img{  /*всі крартинки адаптивні, доступний про�
 }
 
 body{
-	font-size: 12px;  /*основний шрифт, якщо не буде, що буде, якщо не буде - сімейство шрифтів*/
+	font-size: 10px;  /*основний шрифт, якщо не буде, що буде, якщо не буде - сімейство шрифтів*/
 	font-family: Arial, Helvetica, sans-serif;
 }
 
 .main-wrapper{
 	background-color: #6a7436;
-	padding: 20px 40px 20px 40px;
+	padding: 5px 10px 5px 10px;
 }
 
 .header{
@@ -44,14 +44,14 @@ body{
 }
 .zagolovok div:first-child{
 	font-family:Brush Script MT, Brush Script Std, cursive;
-	font-size: 38px;
+	font-size: 18px;
 	color: #6a7436;
 	text-shadow: 3px -3px 5px white;
 
 }
 .zagolovok div:last-child{
 	font-family: Bradley Hand, cursive;
-	font-size: 20px;
+	font-size: 10px;
 	text-align: center;
 	text-shadow: 3px -3px 5px white;
 }
@@ -64,7 +64,7 @@ body{
 	width: 10px;
 	height: 10px;
 	background-color: white;
-	margin: 30px;
+	margin: 10px;
 	box-shadow: 0 0 10px #6a7436;
 	animation-name: spin;  /*задає імя анімації*/
 	animation-duration: 2s;  /*задає час протягом якого буде виконуватися один цикл анімації*/
@@ -83,25 +83,26 @@ body{
 	flex-direction: column;
 	justify-content: center;
 	padding: 10px;
-	font-size: 15px;
+	font-size: 12px;
 }
 .kontaktu img{
-	height: 190px;
-	width: 190px;
-	padding: 10px;
+	display: none;
 }
 .wrapper{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	background-color: #d1d7b1;
-	font-family: Brush Script MT, Brush Script Std, cursive;
+	font-family: Brush Script MT, Brush Script Std, cursive, Arial;
 	padding: 10px;
 	text-align: center;
 }
 
 .menu{
-	/*display: none;*/
+	display: none;
+}
+.menu{
+	/*display: block;*/
 	background-color: #a0aa6d;
 	width: 200px;
 }
@@ -136,16 +137,18 @@ body{
 	padding: 5px;
 	width: 100%;
 }
+
+form{
+	font-size: 10px;
+}
 .text{
-	display: none;
-	padding-left: 20px;
-	width: 320px;
+	/*display: none;*/
+	/*padding-left: 20px;*/
+	width: 100%;
+	font-size: 10px;
 }
 .my-flex-block div:first-child{
-	min-width: 50px;
-	width: 180px;
-	border: 10px outset #d1d7b1;
-	text-align: left;
+	display: none;
 }
 .my-flex-block a{
 	text-decoration: none;
@@ -162,8 +165,117 @@ ol{
 	padding-left: 30px;
 }
 
+/**//*меню гамбургер*/
+/*
+ .menu_male {
+    text-align: right;
+}
+
+.menu__icon {
+   display: none;
+   width: 45px;
+   height: 35px;
+   position: relative;
+   cursor: pointer;
+}
+
+.menu__icon span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: #333333;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.menu__icon span:nth-child(1) {
+  top: 0px;
+}
+
+.menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
+  top: 13px;
+}
+
+.menu__icon span:nth-child(4) {
+  top: 26px;
+ }
+
+.menu__links-item {
+    display: inline-block;
+    color: #333333;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu__links-item:hover {
+    text-decoration: underline;
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.menu.menu_state_open  .menu__icon span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.menu.menu_state_open  .menu__icon span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.menu.menu_state_open .menu__links {
+  display: block;  
+}
+
+@media screen and (max-width: 999px) {
+  .menu__icon{
+    display: inline-block;
+  }
+  
+  .menu__links {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-top: 52px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    overflow: auto;
+  }
+  
+  .menu__links-item {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    color: #ffffff;
+  }
+}*/
+
+/*кінець гамбургера*/
+
+
 /*для компа*/
 @media (min-width: 1224px) { 
+.main-wrapper{
+	padding: 20px 40px 20px 40px;
+}
 .wrapper{
 	display: flex;
 	flex-direction: row;
@@ -175,9 +287,52 @@ ol{
 }
 .text{
 	display: inline-block;
-}
+	padding-left: 20px;
+	font-size: 16px;
 .my-flex-container{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+}
+.zagolovok div:first-child{
+	font-size: 38px;
+}
+.square{
+	margin: 30px;
+}
+
+.zagolovok div:last-child{
+	font-size: 20px;
+}
+.kontaktu img{
+	display: block;
+	height: 190px;
+	width: 190px;
+	padding: 10px;
+}
+/*.menu{
+	display: block;
+	background-color: #a0aa6d;
+	width: 200px;
+}
+.menu li{
+	border: 10px outset #d1d7b1;
+	text-decoration: none;
+	list-style: none;
+}
+.menu li a{
+	text-decoration: none;
+}*/
+.kontaktu img{
+	display: block;
+	height: 110px;
+	width: 150px;
+	padding: 10px;
+}
+.my-flex-block div:first-child{
+	display: block;
+	min-width: 50px;
+	width: 180px;
+	border: 10px outset #d1d7b1;
+	text-align: left;
 }

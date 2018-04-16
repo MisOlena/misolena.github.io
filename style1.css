@@ -17,7 +17,7 @@ img{  /*всі крартинки адаптивні, доступний про�
 }
 
 body{
-	font-size: 10px;  /*основний шрифт, якщо не буде, що буде, якщо не буде - сімейство шрифтів*/
+	font-size: 12px;  /*основний шрифт, якщо не буде, що буде, якщо не буде - сімейство шрифтів*/
 	font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -43,15 +43,15 @@ body{
 	text-align: center;
 }
 .zagolovok div:first-child{
-	font-family:Brush Script MT, Brush Script Std, cursive;
-	font-size: 18px;
+	font-family:Brush Script MT,  Brush Script Std, cursive, Arial;
+	font-size: 20px;
 	color: #6a7436;
 	text-shadow: 3px -3px 5px white;
 
 }
 .zagolovok div:last-child{
-	font-family: Bradley Hand, cursive;
-	font-size: 10px;
+	font-family: Bradley Hand, cursive, Arial;
+	font-size: 16px;
 	text-align: center;
 	text-shadow: 3px -3px 5px white;
 }
@@ -90,10 +90,10 @@ body{
 }
 .wrapper{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-around;
 	background-color: #d1d7b1;
-	font-family: Brush Script MT, Brush Script Std, cursive, Arial;
+	font-family: Brush Script MT, Brush Script Std, cursive;
 	padding: 10px;
 	text-align: center;
 }
@@ -101,26 +101,13 @@ body{
 .menu{
 	display: none;
 }
-.menu{
-	/*display: block;*/
-	background-color: #a0aa6d;
-	width: 200px;
-}
-.menu li{
-	border: 10px outset #d1d7b1;
-	text-decoration: none;
-	list-style: none;
-}
-.menu li a{
-	text-decoration: none;
-}
+
 .my-flex-container{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	flex-wrap: wrap;
 	align-content: space-around;
-	width: 100%;
 }
 .letter { 
      color: red;  
@@ -131,24 +118,30 @@ body{
 }
 .my-flex-block{
 	display: flex;
+	display: none;
 	flex-direction: row;
 	justify-content: flex-start;
 	border: 10px solid #a0aa6d;
 	padding: 5px;
-	width: 100%;
-}
-
-form{
-	font-size: 10px;
 }
 .text{
 	/*display: none;*/
 	/*padding-left: 20px;*/
-	width: 100%;
-	font-size: 10px;
+	width: 200px;
 }
+
+ol li:nth-child(odd){
+	background-color: #acc181;
+}
+ol li:nth-child(even){
+	background-color: #d7edaa;
+}
+d7edaa
 .my-flex-block div:first-child{
-	display: none;
+	min-width: 50px;
+	width: 180px;
+	border: 10px outset #d1d7b1;
+	text-align: left;
 }
 .my-flex-block a{
 	text-decoration: none;
@@ -164,6 +157,23 @@ ol{
 	text-align: left;
 	padding-left: 30px;
 }
+/*для бургера*/
+/*.nav-burger__checkbox{
+	display: none;
+
+	&:checked{
+		+ .nav-burger{
+			background-color:red;
+		}
+
+		~ .menu{
+			display: block;
+		}
+	}
+}*/
+
+
+/*кінець бургера*/
 
 /**//*меню гамбургер*/
 /*
@@ -287,30 +297,41 @@ ol{
 }
 .text{
 	display: inline-block;
-	padding-left: 20px;
 	font-size: 16px;
+	width: 700px;
+}
 .my-flex-container{
 	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+	flex-direction: column;
+	justify-content:space-between;
+	/*width: 70%;*/
+}
+.my-flex-block{
+	/*width: 900px;*/
+	border:none;
+	display: block;
+}
+
+.forma1{
+	margin: 10px;
 }
 .zagolovok div:first-child{
 	font-size: 38px;
 }
+.kontaktu img{
+	display: block;
+	height: 110px;
+	width: 150px;
+	padding: 10px;
+}
 .square{
 	margin: 30px;
 }
-
 .zagolovok div:last-child{
 	font-size: 20px;
 }
-.kontaktu img{
-	display: block;
-	height: 190px;
-	width: 190px;
-	padding: 10px;
-}
-/*.menu{
+.menu{
+	/*display: none;*/
 	display: block;
 	background-color: #a0aa6d;
 	width: 200px;
@@ -322,17 +343,4 @@ ol{
 }
 .menu li a{
 	text-decoration: none;
-}*/
-.kontaktu img{
-	display: block;
-	height: 110px;
-	width: 150px;
-	padding: 10px;
-}
-.my-flex-block div:first-child{
-	display: block;
-	min-width: 50px;
-	width: 180px;
-	border: 10px outset #d1d7b1;
-	text-align: left;
 }
